@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+#mainbody {
+  position: relative;
+}
+#main {
+  height: 100%;
+  position: relative;
+  margin: 0 140px;
+}
+nav {
+  z-index: 1;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+#netflixLogDiv {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  color: #f12630;
+  font-size: 20px;
+}
+
+#navButtons {
+  display: flex;
+  padding: 20px;
+  margin-right: 150px;
+}
+#selectBtn {
+  background-color: transparent;
+  height: 35px;
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid #333;
+}
+.ri-translate-2 {
+  padding: 0;
+  margin: 5%;
+}
+
+#selectBtn select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: aliceblue;
+  background-color: transparent;
+}
+select:active {
+  border: none;
+}
+#navButtons #signOut {
+  width: 90px;
+  height: 35px;
+  background-color: #f12630;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 6px;
+  user-select: auto;
+}
+
+#heroSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  object-position: center;
+}
+#heroImg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+}
+#hreoText {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backdrop-filter: blur(1px); /* soft blur */
+  background: rgb(0, 0, 0, 0.7); /* dark overlay */
+}
+#heroSection h1 {
+  font-size: 50px;
+}
+#heroSection h2 {
+  font-size: 50px;
+}
+#heroSection p {
+  font-size: 14px;
+}
+#emailDiv {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#emailInput {
+  width: 400px;
+  height: 60px;
+  background-color: #0f0f10;
+  opacity: 0.5;
+  border: 1px solid white;
+  margin: 10px;
+  border-radius: 5px;
+}
+#emailInput::placeholder {
+  color: rgb(255, 255, 255);
+}
+.heroBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f12630;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+.heroBtn > span {
+  font-size: xx-large;
+}
+#heroSection * {
+  padding: 5px;
+}
+
+#trendingNowSection {
+  position: relative;
+  margin-top: 100px;
+}
+#trendingImgs::-webkit-scrollbar {
+  display: none;
+}
+.images {
+  align-items: center;
+  display: flex;
+  position: relative;
+  transition: ease-in-out 0.5s;
+}
+.images h1 {
+  height: auto;
+  width: auto;
+  position: absolute;
+  padding-top: 70%;
+  font-size: 100px;
+  font-weight: 800;
+  color: black;
+  -webkit-text-stroke: 2px rgb(255, 255, 255); /* Border width and color */
+}
+
+#trendingImgs {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+#trendingImgs img {
+  width: 190px;
+  margin: 10px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  transition: ease-in-out 0.5s;
+}
+.images:hover {
+  scale: 1.1;
+  border-radius: 5px;
+}
+#moreResH2 {
+  margin-top: 2px;
+  padding: 0 10px;
+  font-weight: 500;
+}
+#moreToJoin {
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+}
+
+.moreReasonsDiv {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  width: 24vw;
+  height: 18vw;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #192145, #20111e);
+}
+.moreReasonsDiv p {
+  margin-top: 10px;
+}
+.moreReasonsDiv > svg {
+  right: 2%;
+  bottom: 2%;
+  position: absolute;
+}
+#frequentlyDiv {
+  height: auto;
+  width: 100%;
+}
+#questionDiv {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.question {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  margin: 0 0.1%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2f2f;
+  padding: 10px;
+}
+.question i {
+  margin: 10px;
+  font-size: 30px;
+  transition: transform 0.1s ease-in-out;
+}
+.rotate {
+  transform: rotate(-45deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+#frequentlyDiv h2 {
+  margin: 10px;
+}
+#frequentlyDiv h2,
+h3 {
+  font-weight: 500;
+}
+.question:hover {
+  background-color: #434343;
+}
+
+.qustionToggle {
+  margin: 0.4%;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+.ans {
+  display: none;
+  align-items: center;
+  padding: 10px;
+  margin-top: 0px;
+  background-color: #2f2f2f;
+  transition: ease-in-out 1s;
+}
+.onOff {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 0px;
+  background-color: #2f2f2f;
+  min-height: 100px;
+  transition: transform 0.1s ease-in-out;
+}
+footer {
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+footer .heroBtn {
+  margin: 30px 0;
+  padding: 10px;
+}
+footer h4 {
+  margin: 30px 0;
+  font-weight: 300;
+}
+#footerLeftRight {
+  height: auto;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+}
+#footerLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#footerRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  margin: 6px 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+footer #selectBtn {
+  margin: 40px 0;
+}

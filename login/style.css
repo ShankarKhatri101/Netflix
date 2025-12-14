@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  overflow-x: hidden;
+  background: linear-gradient(#421418, #090102);
+}
+#mainBody {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 12%;
+  width: 100vw;
+  padding: 0 180px;
+  border-bottom: 0.0625rem solid rgba(128, 128, 128, 0.2);
+}
+#main {
+  display: flex;
+  justify-content: center;
+  height: 83%;
+  width: 100vw;
+}
+
+#container {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+}
+#container * {
+  margin-top: 10px;
+}
+#loginUpText > h1 {
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+#inputDiv {
+  user-select: none;
+  position: relative;
+  background-color: #1c1313;
+  height: 40%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#realInput {
+  width: 100%;
+  height: 100%;
+  background-color: #1c1313;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: white;
+  transition: ease-in-out 0.1s;
+}
+#emailH5 {
+  font-weight: 400;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  color: #e4e4e4;
+  transition: ease-in-out 0.1s;
+}
+#realInput:autofill{
+background-color: red;
+}
+#realInput:focus + #emailH5 {
+  top: -20%;
+  font-size: small;
+  transition: ease-in-out 0.1s;
+}
+
+#buttonDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: #e50914;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+  font-weight: 500;
+}
+#Continue{
+    text-decoration: none;
+
+}
+
+#getHelpDiv {
+  font-size: medium;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+#getHelpBtn {
+  font-size: medium;
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.helpLinks {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  font-size: small;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.hideToggle {
+  display: flex;
+  transition: ease-in-out 1s;
+}
+.helpLinks a {
+  font-size: small;
+  color: white;
+}
+
+#getHelpDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#getHelpDiv p {
+  font-size: small;
+}
